@@ -1,4 +1,4 @@
-package jms;
+package imy;
 
 public class Test {
 
