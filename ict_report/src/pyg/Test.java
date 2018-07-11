@@ -1,5 +1,7 @@
 package pyg;
 
 public class Test {
-//TING TESTFGFGGHFG!!!!
+	public static void main(String[] args) {
+		
+	}
 }
