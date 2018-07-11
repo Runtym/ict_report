@@ -1,8 +1,5 @@
-package zhk;
+package ljy;
 
 public class Test {
 
-	
-	
-	
 }
