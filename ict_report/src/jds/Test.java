@@ -1,4 +1,4 @@
-package jms;
+package jds;
 
 public class Test {
 
