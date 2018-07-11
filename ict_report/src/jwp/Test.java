@@ -1,6 +1,5 @@
-package jsh;
+package jwp;
 
 public class Test {
-	 
 
 }
