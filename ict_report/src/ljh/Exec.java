@@ -16,7 +16,6 @@ public class Exec {
 
 		Person p = new Person(name, ageR);
 		System.out.println(p.toString());
-
 	}
 
 }
