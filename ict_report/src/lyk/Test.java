@@ -1,5 +1,5 @@
 package lyk;
 
 public class Test {
-//테스트닷
+//테스트 중입니다.
 }
