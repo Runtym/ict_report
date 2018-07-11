@@ -1,5 +1,5 @@
-package jms;
+package bjs;
 
 public class Test {
-
+//test
 }
