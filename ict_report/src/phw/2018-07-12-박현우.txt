@@ -1,0 +1,80 @@
+1. 운영체제 4가지를 선정하여 각각의 특징들을 서술하여주세요.
+
+유닉스 
+교육 및 연구 기관에서 즐겨 사용되는 범용 다중 사용자 방식의 시분할 운영 체제
+ 영 체제가 대부분 고급 언어인 C언어로 쓰여져 있었고 소스 코드를 쉽게 구할 수 있어서 이식성이 높으며, 
+동시에 다중 사용자/다중 태스크의 실행을 지원할 수 있는 것을 특징으로 하는 대화형의 운영 체제.
+
+리눅스
+1991년 11월에 리누스 토르발즈(Linus Torvalds)가 버전 0.02을 공개한 유닉스 기반 개인컴퓨터용 공개 운영체제이며
+다중 사용자, 다중 작업(멀티태스킹), 다중 스레드를 지원하는 네트워크 운영 체제
+
+맥 
+OS(맥 오에스, Mac OS)는 애플이 매킨토시 용으로 개발한 유닉스 기반 그래픽 사용자 인터페이스 운영 체제
+
+윈도우즈
+마이크로소프트 윈도우(Microsoft Windows 마이크로소프트 윈도우즈) 는 마이크로소프트가 개발한 컴퓨터 운영 체제. 애플이 개인용 컴퓨터에 처음으로 도입한 그래픽 사용자 인터페이스(GUI) 운영 체제인 맥 OS에 대항하여, 당시 널리 쓰이던 MS-DOS에서 멀티태스킹과 GUI 환경을 제공하기 위한 응용 프로그램으로 처음 출시.
+
+2. cmd상에서 폴더를 만들고 그 안에 파일을 만드는
+명령어를 서술해 주세요.
+cmd 관리자권한으로 실행 -> mkdir 폴더명(ex. area) 입력 = 디렉토리 생성 -> cd 폴더명 (cd area) 입력 = 해당 디렉토리로 이동 -> fsutil file createnew 파일이름(확장자포함) 크기지정 (ex. fsutil file createnew test.txt 2)
+
+3. 특정프로그램을 시스템관리자 상에서 우선순위를
+조정할 수 잇는 방법을 서술해 주세요.
+바탕화면 시작표시줄 우 클릭 -> 작업관리자 클릭 -> 프로세스 탭 이동 (Windows 10의 경우 세부정보 탭) -> 우선순위 변경하고자 하는 특정프로세스 우 클릭 -> 우선 순위 설정 (위에서부터 빠른 순서)
+
+4. 데이터베이스 중에 오픈 소스 중 전세계에서 가장 많이 사용하는 RDBMS
+에 대하여 알아보고 설명을 서술해주시고
+ 해당 시스템에 기본포트가 무엇인지 서술하세요.
+MySQL : 효율적인 아키텍처를 채택하여 빠른 성능과 쉬운 사용자 구성을 가능하게 하고 다양한 함수와 여러 기능면에서 상용 데이터베이스가 가지지 못한 점을 가진 것도 있으며 속도와 간결성, 안정성과 용이한 관리를 보장해주는 데이터베이스 관리 시스템.
+기본포트 : 3360
+
+5. 위의 RDBMS를 설치하는 방법을 다운로드 링크까지 포함하여
+서술하여 주세요.
+https://dev.mysql.com/downloads/windows/installer/8.0.html
+1.	전체파일을 설치하기위해 두번째 MSI Installer 다운로드후 실행
+2.	라이선스 규약확인후 Next -> setup type에서 사용목적에 맞게 선택(학습을 위해서 전체설치 권장 full) 후 Next -> 설치할 디렉토리 폴더 지정 후 Next -> 설치될 항목 확인 후 Execute -> 설치시작 Next
+3.	환경설정작업 config type에서 개발자라 가정하고 Development Machine선택 Next -> 루트암호 지정 후 Next ->윈도우 서비스 이름 지정 후 Next -> Execute -> 환경설정 적용완료 finish
+4.	기타환경설정작업 Next -> 루트 ID와 암호를 입력하고 체크 후 Next -> Execute -> finish -> Next -> 기타환경설정작업 완료 finish 
+
+6. 데이터 베이스에서 ICT_TEST를 생성하여
+그 안에 ICT_TEST라는 테이블을 생성하는 SQL을 작성해 주세요.
+create database ICT_TEST;   데이터베이스 생성
+use ICT_TEST;         해당 데이터베이스를 사용
+create table ICT_TEST(      ICT_TEST라는 이름의 테이블 생성
+uNum int);      테이블생성시 반드시 한 개이상의 컬럼을 포함
+
+7. LAN이란 무엇인지 조사하여 서술해주세요.
+근거리 통신망, 로컬 영역 네트워크(local area network, LAN), 
+구내 정보 통신망은 네트워크 매체를 이용하여 집, 사무실, 학교 등의 
+건물과 같은 비교적 가까운 지역을 한데 묶는 컴퓨터 네트워크
+
+8. 사용하는 컴퓨터의 OS버전및 종류(비트)를 서술하고
+OS 버전 : Windows 10 Pro 
+시스템 종류 : 64bit
+
+이클립스에 TOMCAT를 설치하는 방법을 서술해주세요.
+이클립스 설치
+1. 현재 pc os버전 및 종류 확인 (windows10, 64bit)
+2. 이클립스 다운로드 페이지 접속 
+(https://www.eclipse.org/downloads/eclipse-packages/)
+3. 운영체제와 맞는 IDE for java EE Developers 다운로드 (windows10, 64bit)
+다운로드 파일
+(https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-jee-photon-R-win32-x86_64.zip&mirror_id=1275)
+4. workspace 폴더 만들기
+5. 런처에서 다운로드위치를 아까만든 workspace로 지정
+
+톰캣설치 및 이클립스 서버 추가
+1. os버전 및 종류확인	(windows10, 64bit)
+2. 아파치톰캣 다운로드페이지 접속
+(https://tomcat.apache.org/download-80.cgi)
+3. 운영체제에 맞는 톰캣 다운로드 (windows10, 64bit)
+다운로드 파일 링크 (http://mirror.apache-kr.org/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32-windows-x64.zip)
+4. server폴더 생성 후 폴더안에 압축풀기
+5. 이클립스 하단에 서버 창 클릭하면 no servers확인
+5.5 만약 하단에 Server 탭 없으면 window - show view - server 클릭
+6. no servers~~ 클릭하고 아파치 폴더클릭 및 다운로드한 톰캣 버전 클릭
+7. next후 browse를 통해 아까 압축풀었던 톰캣파일 클릭
+8. 완료하면 하단 서버 탭에서 Tomcat v8.5 Server at localhost [Stopped] 확인
+
+
