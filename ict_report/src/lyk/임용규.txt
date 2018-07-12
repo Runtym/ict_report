@@ -1,0 +1,91 @@
+
+1. 운영체제 4가지를 선정하여 각각의 특징들을 서술하여 주세요.
+ex) 리눅스 : 리누스 토파즈가 1991년 미닉스를 개량하여 만든 OS로 오픈 소스 OS기반에서 많은 사용량을 유지하고 있다.
+
+Microsoft Windows : 일반 사용자의 수가 가장 많으며, 그만큼 보안 취약점이 많이 알려져 있다. 멀티태스킹 기능이 뛰어나다.
+리눅스 : 명령어 기반 UI이며, 오픈소스이므로 다양한 버전이 존재하며 다양한 플랫폼에 설치할 수 있다. 서버용 프로그램들 다수가 리눅스 기반으로 개발되고 있다.
+안드로이드 : 오픈소스이며, 리눅스 커널을 기반으로 하며 가상머신을 기반으로 작동한다. 주로 모바일 플랫폼에 설치되어 있다.
+iOS : 권한 설정이 폐쇄적이고 앱 검수 조건이 빡빡해서 보안에는 뛰어난 반면, 사용자(개발자)에 의한 자유로운 변형은 어려운 편이다.
+
+
+
+2. cmd상에서 폴더를 만들고 그안에 파일을 만드는 명령어를 서술해 주세요.
+
+1) cmd명령어를 관리자 권한으로 실행(파일 생성시 권한이 필요함)
+2) 'mkdir <폴더명>' 명령어를 이용해서 폴더 생성
+3) 'cd <폴더명>' 명령어를 이용해서 해당 폴더로 이동
+4) 'fsutil file createnew <파일명(확장자 포함)> <기본바이트수>' 명령어를 이용해서 파일을 생성
+
+
+
+3. 특정프로그램을 시스템관리자 상에서 우선순위를 조정할 수 있는 방법을 서술해 주세요.
+
+작업 표시줄 우클릭 -> 작업 관리자 클릭 -> 프로세스 탭 클릭 -> 특정 프로그램 우클릭 -> 우선 순위 설정 클릭 -> 원하는 우선 순위 클릭
+
+
+
+4. 데이터베이스중에 오픈 소스중 전세계에서 가장 많이 사용하는 RDBMS 에 대하여 알아보고 설명을 서술해주시고 해당 시스템의 기본포트가 무엇인지 서술하세요.
+
+https://db-engines.com/en/ranking
+2018년 7월 12일(한국시간) 위 사이트에 따르면 오라클이 RDBMS(Relational DBMS)중 1위이며, 오라클의 기본포트는 1521이다.
+오라클은 한국 기업(주로 대기업) 내에서 점유율이 높으며, 특히 금융권에서 매우 흔히 사용되고 있다.
+유료(commercial)이며, C 및 C++로 구현되어 있다.
+
+
+
+5. 위의 RDBMS를 설치하는 방법을 다운로드 링크까지 포함하여 서술하여 주세요.
+
+1) 오라클 다운로드 페이지에 접속: https://www.oracle.com/downloads/index.html
+2) 비교적 안정적인 버전인 11g Express Edition을 다운로드: https://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html
+3) Accept License Agreement에 동의를 클릭한 후, 자기 PC의 운영체제(ex:64비트)에 맞는 버전을 다운로드: http://download.oracle.com/otn/nt/oracle11g/xe/OracleXE112_Win64.zip
+이후는 MariaDB 기준으로 서술(수업시간에 배운 게 이것뿐이라...ㅠㅠ)
+4) 다운로드: https://downloads.mariadb.org/interstitial/mariadb-10.3.8/winx64-packages/mariadb-10.3.8-winx64.msi/from/http%3A//ftp.kaist.ac.kr/mariadb/
+5) 해당 파일 실행 후 Next - 라이센스 동의 - Next - Next 클릭
+6) root 비밀번호를 설정하고(수업용으로는 12345678), UTF8에 체크, 그후 Next 클릭
+7) 이후 전부 Next 클릭하고 Finish 클릭
+
+
+
+6. 데이터베이스에서 ICT_TEST를 생성하여 그안에 ICT_TEST라는 테이블을 생성하는 SQL을 작성해 주세요.
+
+MariaDB를 기준으로 설명하면 다음과 같다.
+1) 쿼리문 create database ICT_TEST;을 입력하면 ICT_TEST 데이터베이스가 생성된다.
+2) 쿼리문 use ICT_TEST;을 입력하면 ICT_TEST 데이터베이스가 선택된다.
+3) 그 상태에서 다음 쿼리문을 입력하면 ICT_TEST 테이블이 ICT_TEST 데이터베이스 안에 생성된다.
+create table ICT_TEST(name VARCHAR(20), age INT(10));
+
+
+
+7. LAN이란 무엇인지 조사하여 서술해주세요.
+
+근거리 통신망(Local Area Network)의 약자.
+여기서 '근거리'의 범위는 사무실이나 학교, 일반 가정 등 대략 1Km 이내를 의미하는 편이다.
+광섬유나 동축케이블 등 유선으로 연결되어 있으며, 전체 통신망 중 대부분을 차지한다.
+LAN의 종류로는 스타(별)형, 버스형, 링크형, 허브형 등이 있다.
+
+
+
+8. 사용하는 컴퓨터의 OS버전및 종류(비트)를 서술하고 이클립스에 TOMCAT를 설치하는 방법을 서술해주세요.
+EX). JDK - 다운로드 주소 http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-windows-x64.exe
+Eclipse - 다운로드 주소 https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/1a/eclipse-jee-oxygen-1a-win32-x86_64.zip&mirror_id=105
+톰캣 설치 - 다운로드 주소 http://apache.tt.co.kr/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23-windows-x64.zip
+
+내 PC의 OS버전은 Windows 10 Home 1709 버전이며 64비트 환경임.
+
+이클립스에 TOMCAT를 설치하는 방법
+1) http://tomcat.apache.org/ 접속
+2) Tomcat 8 다운로드 링크 클릭
+3) 64비트 환경에 설치할 것이므로 다음 링크 클릭: http://mirror.apache-kr.org/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32-windows-x64.zip
+4) 다운받은 파일의 압축을 해제
+5) 이클립스의 Servers 탭의 링크를 클릭
+6) New Server 창에서 Apache - Tomcat v8.5 Server 선택 후 Next
+7) Browse... 클릭 후 아까 압축을 풀었던 경로를 지정, 그 후 Finish
+8) Servers 탭에 Tomcat v8.5 Server at localhost라고 표시되어 있으면 설치 완료된 것임
+(이 아래는 사족)
+9) Tomcat v8.5 Server at localhost을 우클릭해서 나오는 메뉴 중 Start 선택하면 서버가 실행됨
+10) Tomcat v8.5 Server at localhost을 더블클릭하면 Ports를 변경할 수 있는 화면이 나옴. HTTP의 포트를 80으로 수정.
+11) 프로젝트 익스플로러 탭에 새 프로젝트를 만들되, Dynamic Web Project를 선택해서 프로젝트 생성
+12) Tomcat v8.5 Server at localhost을 우클릭해서 나오는 메뉴 중 Add and Remove 선택
+13) Available뷰에 있는 프로젝트를 Configured 탭으로 Add 후 Finish
+14) 웹 브라우저의 url창에 localhost 입력, index.htm이 열리는지 확인(미리 생성해둬야 함)
+
