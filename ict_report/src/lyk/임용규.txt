@@ -38,6 +38,11 @@ https://db-engines.com/en/ranking
 1) 오라클 다운로드 페이지에 접속: https://www.oracle.com/downloads/index.html
 2) 비교적 안정적인 버전인 11g Express Edition을 다운로드: https://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html
 3) Accept License Agreement에 동의를 클릭한 후, 자기 PC의 운영체제(ex:64비트)에 맞는 버전을 다운로드: http://download.oracle.com/otn/nt/oracle11g/xe/OracleXE112_Win64.zip
+이후는 MariaDB 기준으로 서술(수업시간에 배운 게 이것뿐이라...ㅠㅠ)
+4) 다운로드: https://downloads.mariadb.org/interstitial/mariadb-10.3.8/winx64-packages/mariadb-10.3.8-winx64.msi/from/http%3A//ftp.kaist.ac.kr/mariadb/
+5) 해당 파일 실행 후 Next - 라이센스 동의 - Next - Next 클릭
+6) root 비밀번호를 설정하고(수업용으로는 12345678), UTF8에 체크, 그후 Next 클릭
+7) 이후 전부 Next 클릭하고 Finish 클릭
 
 
 
