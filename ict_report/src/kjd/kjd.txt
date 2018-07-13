@@ -84,5 +84,3 @@ http://apache.tt.co.kr/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23-windows-
 http://apache.tt.co.kr/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23-windows-x64.zip
 톰캣 버전 선택 -> 운영체제 선택(64비트) -> 서버 폴더 생성 -> 서버 폴더 안에서 압축 풀기
 
-
-
