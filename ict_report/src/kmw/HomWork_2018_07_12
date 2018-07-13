@@ -54,12 +54,13 @@ ctrl+alt+esc 를 눌러 작업관리자를 열어서 프로세스 탭에 가서 
 5. 위의 RDBMS를 설치하는 방법을 다운로드 링크까지 포함하여 서술하여 주세요.
 http://downloads.mariadb.com/MariaDB/mariadb-10.3.8/winx64-packages/mariadb-10.3.8-winx64.msi
 
-
+maria db 설치시 패스워드 설정할때 UTB-8  체크박스 체크해줘야함
 
 
 
 6. 데이터 베이스에서 ICT_TEST를 생성하여
 그안에 ICT_TEST라는 테이블을 생성하는 SQL을 작성해 주세요.
+
 
 create database ICT_TEST;
 
