@@ -42,7 +42,6 @@ public class WrapperInteger {
 		System.out.println(Integer.parseInt("24567"));
 		System.out.println(Integer.parseInt("ff", 16));
 		System.out.println(Integer.toBinaryString(255));
-		System.out.println(Integer.toString(255, 16));
-
+		System.out.println(Integer.toString(255, 16)); 
 	}
 }
