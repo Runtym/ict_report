@@ -1,0 +1,108 @@
+* 주의사항 *
+각문제는 여러줄일 수 있으며 실행또는 에러가 발생할수도 있습니다.
+에러가 발생된다고 생각될경우 "에러"라고 적으시면 됩니다.
+
+
+1. 다음중 설명으로 틀린것은?
+ 1) 오버로딩은 상속을 해야만 가능하다.
+ 2) 생성자는 클래스당 1개만 선언이 가능하다.
+ 3) 변수는 반드시 데이터타입을 지정해야 한다.
+ 4) 모든 클래스는 Object클래스를 상속 받고 있다.
+ 
+* 아래의 결과값을 보고 대괄호에 알맞은 코드를 작성해주세요.
+  - 결과 - 
+	a = 20
+	a = 15
+	b = 30
+  - 코드 -
+	class TestOne{
+		TestOne(int a){
+			System.out.println("a = " + a);
+		}
+		
+		TestOne(int a, int b){
+			System.out.println("a = " + a);
+			System.out.println("b = " + b);
+		}
+	}
+	public class PopQuiz {
+		public static void main(String[] args) {
+			new TestOne([2.   20     ]);
+			new TestOne([3.   15,30     ]);
+		}
+	}
+
+* 아래의 결과값을 보고 대괄호에 알맞은 코드를 작성해주세요.
+  - result - 
+  	a = 10
+	b = 5
+
+  - code - 
+ public class PopQuiz {
+	public static void main(String[] args) {
+		int a = 5;
+		int b = 10;
+		[4.           ]
+		[5.           ]
+		[6.           ]
+		System.out.println("a = " + a);
+		System.out.println("b = " + b);
+	}
+}
+
+* 아래의 코드를 보고 실행되는 결과를 적어주세요.
+(결과는 여러줄일 수 있습니다.)
+  - code - 
+  public class PopQuiz {
+	public static void main(String[] args) {
+		for(int i=0;i<10;i++) {
+			System.out.print(i + ",");
+		}
+		System.out.println(i);
+	}
+  }
+  - result -
+  [7.                         
+                                     
+                                     
+                                     ]
+  
+  
+ * 아래의 코드를 보고 실행되는 결과를 적어주세요.
+(결과는 여러줄일 수 있습니다.)
+  - code - 
+  public class PopQuiz {
+	public static void main(String[] args) {
+		String str = "abc";
+		int idx = str.indexOf("b");
+		
+		if(idx==-1) {
+			System.out.println("없음~");
+		}else {
+			System.out.println(idx);
+			if(idx==3) {
+				System.out.println("마지막 글자임");
+				idx = 10;
+			}
+		}
+		
+		System.out.println("idx = " + idx);
+	}
+  }
+  - result -
+  [8.                         
+                                     
+                                     
+                                      ]
+ 
+ * 10부터 1까지 출력하는 코드를 작성하시오.(20점)
+ (반복문을 사용해주세요)
+  - code - 
+  
+  public class Test{
+  	public static void main(String[] args{
+  		for(int i=10;i>0;i--){
+  			System.out.println(i);
+  		}
+  	}
+  }
