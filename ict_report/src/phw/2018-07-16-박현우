@@ -1,0 +1,50 @@
+1. 반복문으로 1부터 10까지 찍는 소스를 작성하세요
+
+1번 public class test {
+   public static void main(String[] args) {
+      for(int i=1; i<=10; i++) {
+         System.out.print(i+" ");
+      }
+   }
+}
+
+2. 반복문으로 10부터 1까지 짝수만 찍는 코드를 작성하세요. 
+public class test {
+   public static void main(String[] args) {
+      for(int i=10; i>0; i--) {
+         if(i%2==0) {		//2로 나눈 나머지가 0일때(짝
+수) 출력
+         System.out.print(i+" ");
+         }
+      }
+   }
+}
+
+3. 반복문으로 10부터 1까지 홀수만 찍는 코드를 작성하세요.
+public class test {
+   public static void main(String[] args) {
+      for(int i=10; i>0; i--) {
+         if(i%2==1) {		//2로 나눈 나머지가 1일때(홀수) 출력
+         System.out.print(i+" ");
+         }
+      }
+   }
+}
+
+4. 절대 자바 261페이지 한번씩 실행해보세요.
+public class WrapperInteger {
+	public static void main(String[] args) {
+		Integer age = new Integer(20);
+		Integer snum = new Integer("20121105");
+
+		System.out.println("나이: " + age.intValue());
+		System.out.println("학번: " + snum.intValue()); // 객체의 내부값을 정수형 반환
+		System.out.println(age.equals(snum)); // 객체의 내용값 비교 = false
+
+		System.out.println(Integer.parseInt("24567"));
+		System.out.println(Integer.parseInt("23", 10)); // 숫자로변환한 16진수의 문자ff를 정수형 10진수로 반환
+		System.out.println(Integer.toBinaryString(255)); // 255를 이진수 문자열로 반환
+		System.out.println(Integer.toString(244, 16)); // 244를 16진수의 문자열로 반환
+	}
+}
+
