@@ -1,0 +1,47 @@
+1. 1,2
+
+2. 20
+
+3. 15,30
+
+4. int temp = a;
+
+5. a= b;
+
+6. b= temp;
+
+7. 0,1,2,3,4,5,6,7,8,9//null값이 나오거나 오류가 뜸
+
+8.indexOf 의 개념을 잘 이해했습니다. b를 indexOf로 돌리겍 되면 1이라는 값이 도출되고 그렇기 때문에 답은
+
+1
+
+idx =1 출력
+
+9.package test182;
+
+ 
+
+public class Theory {
+
+	public static void main(String[] args) {
+
+		int arr[] = new int[0];
+
+		for (int i = 10;i>arr.length;i--) {
+		System.out.println(i+"");
+
+	}
+
+}
+
+or
+
+
+public static void main(String[] args){
+인트형 배열 10개 만들고
+인트 i 생성
+방에 인트 i 넣어주고
+for문 2개로 방 10개에 넣은 수 비교해주고
+if 문으로 정렬 맞춰준 후 
+print해주면 됩니다.
