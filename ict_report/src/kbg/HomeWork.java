@@ -18,12 +18,14 @@ public class HomeWork {
 		for(int i =1;i<=10;i++) {
 			System.out.print(i);
 		}
+		System.out.println();
 		System.out.println("2번 지문");
 		for(int i =10;i>=1;i--) {
 			if(i%2==0) {
 				System.out.print(i);
 			}
 		}
+		System.out.println();
 		System.out.println("3번 지문");
 		for(int i =10;i>=1;i--) {
 			if(i%3==0||i==1) {
