@@ -1,25 +1,40 @@
-package kmw;
+1. 반복문으로 1부터 10까지 찍는 소스를 작성하세요
 
 public class Homework_2018_07_16_Test {
-	
+	public static void main(String[] args) {
+		for (int i = 1; i < 11; i++) {
+		System.out.println(i);
+			}
+		}	
+	}
+
+2. 반복문으로 10부터 1까지 짝수만 찍는 코드를 작성하세요.
+
+public class Homework_2018_07_16_Test {
+	public static void main(String[] args) {
+		for (int i = 10; i > 0; i--) {
+			if (i % 2 == 0) {
+				System.out.println(i);
+				}
+			}
+		}
+	}
+
+3. 반복문으로 10부터 1까지 홀수만 찍는 코드를 작성하세요.
+
+public class Homework_2018_07_16_Test {
 	public static void main(String[] args) {
 
-//		for (int i = 1; i < 11; i++) {
-//			System.out.println(i);
-//		}
-//
-//		for (int i = 10; i > 0; i--) {
-//			if (i % 2 == 0) {
-//				System.out.println(i);
-//			}
-//		}
+		for (int i = 10; i > 0; i--) {
+			if (i % 2 == 1) {
+				System.out.println(i);
+				}
+			}
+		}
+	}
 
-//		for (int i = 10; i > 0; i--) {
-//			if (i % 2 == 1) {
-//				System.out.println(i);
-//			}
-//		}
-		
+4. 절대 자바 261페이지 한번씩 실행해보세요.
+
 		Integer ig = new Integer(10);
 		Long lg = new Long(102);
 		
@@ -50,7 +65,3 @@ public class Homework_2018_07_16_Test {
 		
 		System.out.println(Integer.toString(2147483647, 2));
 		// 왼쪽에 숫자를 우측의 진법으로 바꿔줌
-		
-	}
-
-}
