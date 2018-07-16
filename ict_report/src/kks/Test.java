@@ -13,10 +13,8 @@ public class Test {
 //		long ln = i.longValue();
 //		System.out.println(ln);
 		
-		Integer a = 5;
-		int b = a.parseInt("1B", 16);
-		System.out.println(b);
-		
+		Integer a = Integer.getInteger("누구니 넌");
+		System.out.println(a);
 		
 		
 		
