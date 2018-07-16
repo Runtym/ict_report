@@ -23,7 +23,7 @@ public class Homework_2018_07_16_Test {
 		Integer ig = new Integer(10);
 		Long lg = new Long(102);
 		
-		
+		 
 		int i = 10;
 		long l=1821;
 		
