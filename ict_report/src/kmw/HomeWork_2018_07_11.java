@@ -14,7 +14,7 @@ public class HomeWork_2018_07_11 {
 	동일한 이름의 메소드를 파라미터만 변경해서 여러개 사용할 수 있게하는 것.
 	
 	예)  void god(){
-			System.out.println("")
+			System.out.println("") 
 		  }
 		  void god(int a){
 			System.out.println("")
