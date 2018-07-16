@@ -12,7 +12,19 @@
 2. 반복문으로 10부터 1까지 짝수만 찍는 코드를 작성하세요.
 	public class Test {
   		public static void main(String[] args) {
+  			for(int i=10;i>=1;i--){
+				if(i%2==0) {
+	  				System.out.println(i);
+			}
+  		}
+  	}
 
 3. 반복문으로 10부터 1까지 홀수만 찍는 코드를 작성하세요.
 	public class Test {
   		public static void main(String[] args) {
+  			for(int i=10;i>=1;i--){
+				if(i%2==1) {
+	  				System.out.println(i);
+			}
+  		}
+	}
