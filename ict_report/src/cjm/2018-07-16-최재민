@@ -1,0 +1,40 @@
+
+//1. 반복문으로 1부터 10까지 찍는 소스를 작성하세요
+//
+//2. 반복문으로 10부터 1까지 짝수만 찍는 코드를 작성하세요.
+//
+//3. 반복문으로 10부터 1까지 홀수만 찍는 코드를 작성하세요.
+
+public class Test {
+
+	public static void first() {
+		int i;
+		for(i = 1; i <= 10; i++) {
+			System.out.println(i);
+		}
+		System.out.println();
+	}
+
+	public static void second() {
+		int i;
+		for(i = 10; i >= 1; i -= 2) {
+			System.out.println(i);
+		}
+		System.out.println();
+	}
+
+	public static void third() {
+		int i;
+		for(i = 9; i >= 1; i -= 2) {
+			System.out.println(i);
+		}
+		System.out.println();
+	}
+
+	public static void main(String[] args) {
+		Test.first();  // 1번 문제
+		Test.second(); // 2번 문제
+		Test.third();  // 3번 문제
+	}
+
+}
