@@ -1,12 +1,14 @@
-¹Ýº¹¹® 1~10±îÁö Âï´Â ¼Ò½º¸¦ ÀÛ¼ºÇÏ¼¼¿ä
+ë°˜ë³µë¬¸ 1~10ê¹Œì§€ ì°ëŠ” ì†ŒìŠ¤ë¥¼ ìž‘ì„±í•˜ì„¸ìš”
 for(int i=1; i<=10; i++){
  System.out.println(i);}
- ¹Ýº¹¹® 10~1±îÁö Â¦¼ö¸¸ Âï´Â ¼Ò½º¸¦ ÀÛ¼ºÇÏ¼¼¿ä
+ 
+ ë°˜ë³µë¬¸ 10~1ê¹Œì§€ ì§ìˆ˜ë§Œ ì°ëŠ” ì†ŒìŠ¤ë¥¼ ìž‘ì„±í•˜ì„¸ìš”
  for(int i=10; i>0; i--){
  if(i%2==0){
  System.out.println(i);}
 }
- ¹Ýº¹¹® 10~1±îÁö È¦¼ö¸¸ Âï´Â ¼Ò½º¸¦ ÀÛ¼ºÇÏ¼¼¿ä
+
+ ë°˜ë³µë¬¸ 10~1ê¹Œì§€ í™€ìˆ˜ë§Œ ì°ëŠ” ì†ŒìŠ¤ë¥¼ ìž‘ì„±í•˜ì„¸ìš”
  for(int i=10; i>0; i--){
  if(i%2==1){
  System.out.println(i);}
