@@ -1,0 +1,48 @@
+package homework;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		// 1. 반복문으로 1부터 10까지 찍는 소스를 작성하세요
+		System.out.println("1. 1부터 10까지 찍는 소스");
+		for (int i = 1; i <= 10; i++) {
+			System.out.print(i + ",");
+			// 2. 반복문으로 10부터 1까지 짝수만 찍는 코드를 작성하세요.
+		}
+
+		System.out.println("");
+		System.out.println("2. 10부터 1까지 짝수만 찍는 소스");
+
+		for (int i = 10; i >= 1; i--) {
+			if (i % 2 == 0) {
+				System.out.print(i + ",");
+			}
+		}
+		// 3. 반복문으로 10부터 1까지 홀수만 찍는 코드를 작성하세요.
+		System.out.println("");
+		System.out.println("3. 10부터 1까지 홀수만 찍는 소스");
+		for (int i = 10; i >= 1; i--) {
+			if (i % 2 == 1) {
+				System.out.print(i + ",");
+			}
+
+		}
+		System.out.println("");
+		System.out.println("");
+		System.out.println("4. 절대자바 261page");
+		// 4. 절대 자바 261페이지 한번씩 실행해보세요.
+		Integer age = new Integer(20);
+		Integer snum = new Integer("20121105");
+		
+		System.out.println("나이:"+age.intValue());
+		System.out.println("학번:"+snum.intValue());
+		System.out.println(age.equals(snum));
+		
+		System.out.println(Integer.parseInt("24567"));
+		System.out.println(Integer.parseInt("ff",16));
+		System.out.println(Integer.toBinaryString(255));
+		System.out.println(Integer.toString(255,16));
+	
+		
+	}
+}
