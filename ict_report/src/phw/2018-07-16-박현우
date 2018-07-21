@@ -42,7 +42,7 @@ public class WrapperInteger {
 		System.out.println(age.equals(snum)); // 객체의 내용값 비교 = false
 
 		System.out.println(Integer.parseInt("24567"));
-		System.out.println(Integer.parseInt("23", 10)); // 숫자로변환한 16진수의 문자ff를 정수형 10진수로 반환
+		System.out.println(Integer.parseInt("ff", 10)); // 숫자로변환한 16진수의 문자ff를 정수형 10진수로 반환
 		System.out.println(Integer.toBinaryString(255)); // 255를 이진수 문자열로 반환
 		System.out.println(Integer.toString(244, 16)); // 244를 16진수의 문자열로 반환
 	}
