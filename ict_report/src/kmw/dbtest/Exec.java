@@ -6,8 +6,11 @@ import java.util.Scanner;
 
 import kmw.dbtest.impl.DBProcess;
 
+
+
 public class Exec {
 	
+
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		DBCommand dbc = new DBProcess();
@@ -66,9 +69,11 @@ public class Exec {
 				if(n==-1) {
 					System.out.println("숫자를 입력해주세요.");
 				} else if(n==0) {
-					System.out.println("의문의 실패");
+					System.out.println("존재하지 않는 유저 넘버입니다.");
 				} else if(n==1) {
 					System.out.println("삭제가 성공적으로 완료되었습니다.");
+				} else if(n==-1) {
+					System.out.println("의문의 실패");
 				}
 				
 			} else if(q.equals("q")) {

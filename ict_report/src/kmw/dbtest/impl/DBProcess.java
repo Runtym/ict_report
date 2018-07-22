@@ -72,6 +72,9 @@ public class DBProcess implements DBCommand {
 						System.out.println(hm.get(mtd.get(i)));
 					}
 				}
+				
+				System.out.println("");
+				
 				userInfo.add(hm);
 				return userInfo;
 			}
@@ -237,7 +240,7 @@ public class DBProcess implements DBCommand {
 		} finally {
 			DBConnection.closeCon();
 		}
-		return 0;
+		return -1;
 	}
 
 	@Override
