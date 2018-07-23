@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 �ݺ��� 1~10���� ��� �ҽ��� �ۼ��ϼ���
 for(int i=1; i<=10; i++){
  System.out.println(i);}
@@ -12,4 +13,20 @@ for(int i=1; i<=10; i++){
  for(int i=10; i>0; i--){
  if(i%2==1){
  System.out.println(i);}
+=======
+반복문 1~10까지 찍는 소스를 작성하세요
+for(int i=1; i<=10; i++){
+ System.out.println(i);}
+ 
+ 반복문 10~1까지 짝수만 찍는 소스를 작성하세요
+ for(int i=10; i>0; i--){
+ if(i%2==0){
+ System.out.println(i);}
+}
+
+ 반복문 10~1까지 홀수만 찍는 소스를 작성하세요
+ for(int i=10; i>0; i--){
+ if(i%2==1){
+ System.out.println(i);}
+>>>>>>> branch 'master' of https://github.com/Runtym/ict_report.git
 }
