@@ -1,4 +1,4 @@
-1. ¹®ÀÚ¿­ 2°³¸¦ ÀÔ·Â¹Ş¾Æ Á¤¼ö·Î º¯È¯ÇÏ¿© µÎ¼öÀÇ ÇÕÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇØÁÖ¼¼¿ä.
+1. ë¬¸ìì—´ 2ê°œë¥¼ ì…ë ¥ë°›ì•„ ì •ìˆ˜ë¡œ ë³€í™˜í•˜ì—¬ ë‘ìˆ˜ì˜ í•©ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•´ì£¼ì„¸ìš”.
 package practice;
 
 import java.util.Scanner;
@@ -6,21 +6,21 @@ import java.util.Scanner;
 public class Test {
 	public static void main(String[]args){
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Ã¹¹ø ¤Š ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ì²«ë²ˆ ì¨° ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 	
 		String str1 =  scan.nextLine();
 		int num1 = (int)Integer.parseInt(str1);
 		
-		System.out.println("µÎ¹ø Â° ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ë‘ë²ˆ ì§¸ ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		String str2 = scan.nextLine();
 		int num2 = (int)Integer.parseInt(str2);
 		
-		System.out.println("°á°ú°ª:"+(num1+num2));
+		System.out.println("ê²°ê³¼ê°’:"+(num1+num2));
 	}
 }
 
 
-2. ´ÙÀ½ ºóÄ­¿¡ µé¾î°¥ ÄÚµå¸¦ ÀûÀ¸¼¼¿ä.
+2. ë‹¤ìŒ ë¹ˆì¹¸ì— ë“¤ì–´ê°ˆ ì½”ë“œë¥¼ ì ìœ¼ì„¸ìš”.
 
 package practice;
 
@@ -32,19 +32,19 @@ public class Test {
 		int num = 63;
 
 		if (num < 100) {
-			System.out.println("numÀÌ 100 ¹Ì¸¸ÀÔ´Ï´Ù.");
+			System.out.println("numì´ 100 ë¯¸ë§Œì…ë‹ˆë‹¤.");
 		} else if (100 < num) {
-			System.out.println("numÀÌ 100 ÃÊ°úÀÔ´Ï´Ù. ");
+			System.out.println("numì´ 100 ì´ˆê³¼ì…ë‹ˆë‹¤. ");
 		} else {
-			System.out.println("numÀÌ 100ÀÔ´Ï´Ù.");
+			System.out.println("numì´ 100ì…ë‹ˆë‹¤.");
 		}
 
 	}
 }
 
 
-3. Á¤¼öÇü ¹è¿­À» ¸¸µé°í 5°³ÀÇ ·£´ı°ª(0~ 9)À» Áı¾î³Ö¾î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇØÁÖ¼¼¿ä. 
-  - (List »ç¿ë°¡´É)
+3. ì •ìˆ˜í˜• ë°°ì—´ì„ ë§Œë“¤ê³  5ê°œì˜ ëœë¤ê°’(0~ 9)ì„ ì§‘ì–´ë„£ì–´ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•´ì£¼ì„¸ìš”. 
+  - (List ì‚¬ìš©ê°€ëŠ¥)
 package practice;
 
 import java.util.Scanner;
@@ -54,13 +54,13 @@ public class Test {
 		Integer[] num = new Integer[5];
 		for(int i = 0; i<num.length;i++) {
 			num[i]=(int)(Math.random()*10);
-			System.out.println(i+"¹ø¤Š¹æÀÇ °ª:"+num[i]);
+			System.out.println(i+"ë²ˆì¨°ë°©ì˜ ê°’:"+num[i]);
 		}
 	}
 }
 
 
-4. Á¤¼öÇü µ¥ÀÌÅÍÅ¸ÀÔ 2°³¸¦ ÆÄ¶ó¹ÌÅÍ·Î ¹Ş¾Æ ÇÕÀ» ¸®ÅÏÇÏ´Â ¸Ş¼Òµå¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä.
+4. ì •ìˆ˜í˜• ë°ì´í„°íƒ€ì… 2ê°œë¥¼ íŒŒë¼ë¯¸í„°ë¡œ ë°›ì•„ í•©ì„ ë¦¬í„´í•˜ëŠ” ë©”ì†Œë“œë¥¼ ì‘ì„±í•´ì£¼ì„¸ìš”.
 package practice;
 
 import java.util.Scanner;
@@ -68,7 +68,7 @@ import java.util.Scanner;
 public class Test {
 	public String sum(int num1, int num2) {
 		int sum = num1+num2;
-		return "°á°ú°ªÀº"+sum+"ÀÔ´Ï´Ù.";
+		return "ê²°ê³¼ê°’ì€"+sum+"ì…ë‹ˆë‹¤.";
 	}
 	public static void main(String[]args){
 		Test t = new Test();
@@ -77,7 +77,7 @@ public class Test {
 	
 }
 
-5. 1ºÎÅÍ 50±îÁö Áß¿¡¼­ 3ÀÇ ¹è¼öÀÌ°í 7ÀÇ¹è¼öÀÎ ¼ıÀÚ¸¦ Ãâ·ÂÇØÁÖ¼¼¿ä. 
+5. 1ë¶€í„° 50ê¹Œì§€ ì¤‘ì—ì„œ 3ì˜ ë°°ìˆ˜ì´ê³  7ì˜ë°°ìˆ˜ì¸ ìˆ«ìë¥¼ ì¶œë ¥í•´ì£¼ì„¸ìš”. 
 package practice;
 
 import java.util.Scanner;
@@ -94,9 +94,9 @@ public class Test {
 	
 }
 
-6. ÆÄ¶ó¹ÌÅÍ·Î ÀÓÀÇÀÇ °ªÀÌ µé¾îÀÖ´Â Á¤¼öÇü ¹è¿­À» ¹Ş¾Æ ÃÖ´ë°ªÀ» ¸®ÅÏÇØÁÖ´Â ¸Ş¼Òµå¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä. 
-  - (»çÀÌÁî 3 ~ 10)      
-  - (List »ç¿ë°¡´É)
+6. íŒŒë¼ë¯¸í„°ë¡œ ì„ì˜ì˜ ê°’ì´ ë“¤ì–´ìˆëŠ” ì •ìˆ˜í˜• ë°°ì—´ì„ ë°›ì•„ ìµœëŒ€ê°’ì„ ë¦¬í„´í•´ì£¼ëŠ” ë©”ì†Œë“œë¥¼ ì‘ì„±í•´ì£¼ì„¸ìš”. 
+  - (ì‚¬ì´ì¦ˆ 3 ~ 10)      
+  - (List ì‚¬ìš©ê°€ëŠ¥)
 
 package practice;
 
@@ -138,24 +138,41 @@ public class Test {
 }
 
 
-7. ÆÄ¶ó¹ÌÅÍ·Î String ¹è¿­ °ú ¹®ÀÚ¿­À» ¹Ş¾Æ ÇØ´ç ¹è¿­¿¡ ¸î¹øÂ° ¹æ¿¡ ÇØ´ç ¹®ÀÚ¿­ÀÌ ÀÖ´ÂÁö ¸®ÅÏÇÏ´Â ¸Ş¼Òµå¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä.
-  - (List »ç¿ë°¡´É)
-  
-  public int indexOf(String[] str,String s) {
-		for(int i = 0; i<str.length;i++) {
-			if(str.equals(this.strArr[i])) {
-				return i;
+7. íŒŒë¼ë¯¸í„°ë¡œ String ë°°ì—´ ê³¼ ë¬¸ìì—´ì„ ë°›ì•„ í•´ë‹¹ ë°°ì—´ì— ëª‡ë²ˆì§¸ ë°©ì— í•´ë‹¹ ë¬¸ìì—´ì´ ìˆëŠ”ì§€ ë¦¬í„´í•˜ëŠ” ë©”ì†Œë“œë¥¼ ì‘ì„±í•´ì£¼ì„¸ìš”.
+  - (List ì‚¬ìš©ê°€ëŠ¥)
+public class Test {
+		public static void main(String[] args) {
+			String[] arr = new String[5];
+			String str = "hi2";
+			
+			for(int i=0; i<arr.length-1; i++)
+			{
+				arr[i] = "hi"+i;
+			}
+			int idx = index(arr,str);
+			if(idx == -1) {
+				System.out.println("ì°¾ëŠ”ê°’ì´ì—†ìŠµë‹ˆë‹¤."); 
+			} else {
+				System.out.println(idx+" ë²ˆì§¸ ë°©ì— ìˆìŠµë‹ˆë‹¤.");
 			}
 		}
-		return -1;
-	}
-
-8. ´ÙÀ½ ÇÁ·Î±×·¥¿¡ ½ÇÇà °á°ú¸¦ ¾²¼¼¿ä.
+		public static int index(String[] arr, String str) {
+			
+			for(int i=0; i<arr.length; i++) {
+				if (str.equals(arr[i])) {
+					return i;
+				}
+			}
+			return -1;
+		}
+}
+	
+8. ë‹¤ìŒ í”„ë¡œê·¸ë¨ì— ì‹¤í–‰ ê²°ê³¼ë¥¼ ì“°ì„¸ìš”.
 
 class Father{
 	
 	public void run() {
-		System.out.println("¾Æºü°¡ ´Ş¸³´Ï´Ù.");
+		System.out.println("ì•„ë¹ ê°€ ë‹¬ë¦½ë‹ˆë‹¤.");
 	}
 }
 
@@ -163,7 +180,7 @@ public class Test extends Father{
 
 	@Override
 	public void run() {
-		System.out.println("³»°¡ ´Ş¸³´Ï´Ù.");
+		System.out.println("ë‚´ê°€ ë‹¬ë¦½ë‹ˆë‹¤.");
 	}
 
 	public static void main(String[] args) {
@@ -176,13 +193,13 @@ public class Test extends Father{
 
 } 
 
-³»°¡ ´Ş¸³´Ï´Ù.
-¾Æºü°¡ ´Ş¸³´Ï´Ù.
+ë‚´ê°€ ë‹¬ë¦½ë‹ˆë‹¤.
+ì•„ë¹ ê°€ ë‹¬ë¦½ë‹ˆë‹¤.
 
-9. user_info ¶ó´Â ÀÌ¸§, ³ªÀÌ, ÁÖ¼Ò¸¦ ÀúÀåÇÒ ¼ö ÀÖ´Â tableÀ» ¸¸µå´Â ¸í·É¾î¸¦ ¾²¼¼¿ä 
-  - (ÀÌ¸§, ³ªÀÌ´Â null°ªÀÌ ¾ÈµÇ°Ô ¼³Á¤)
-  - (µ¥ÀÌÅÍ Å¸ÀÔ, »çÀÌÁî´Â Àû´çÈ÷)
-  - (oracle, mariadb µÑÁß¿¡ ¾Æ¹«°Å³ª)
+9. user_info ë¼ëŠ” ì´ë¦„, ë‚˜ì´, ì£¼ì†Œë¥¼ ì €ì¥í•  ìˆ˜ ìˆëŠ” tableì„ ë§Œë“œëŠ” ëª…ë ¹ì–´ë¥¼ ì“°ì„¸ìš” 
+  - (ì´ë¦„, ë‚˜ì´ëŠ” nullê°’ì´ ì•ˆë˜ê²Œ ì„¤ì •)
+  - (ë°ì´í„° íƒ€ì…, ì‚¬ì´ì¦ˆëŠ” ì ë‹¹íˆ)
+  - (oracle, mariadb ë‘˜ì¤‘ì— ì•„ë¬´ê±°ë‚˜)
 
 CREATE DATABASE mydb;
 USE mydb; 
@@ -192,6 +209,6 @@ CREATE TABLE user_info(
  ); 
 
 
-10. ¹æ±İ¸¸µç user_info Å×ÀÌºíÀÇ ³»¿ëÀ» ¸ğµÎ º¸°í ½ÍÀ»¶§¿¡ »ç¿ëÇÏ´Â ¸í·É¾î¸¦ ¾²¼¼¿ä.
+10. ë°©ê¸ˆë§Œë“  user_info í…Œì´ë¸”ì˜ ë‚´ìš©ì„ ëª¨ë‘ ë³´ê³  ì‹¶ì„ë•Œì— ì‚¬ìš©í•˜ëŠ” ëª…ë ¹ì–´ë¥¼ ì“°ì„¸ìš”.
 
-select * from user_info;
+select * from user_info; 
