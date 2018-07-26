@@ -170,7 +170,7 @@ public class Test extends Father{
  create table user_info(
  name varchar(100) not null,
  age int not null,
- address varchar(20)
+ address varchar(100)
  );
   
 
