@@ -124,5 +124,3 @@ address varchar(200)
 
 10.
 select * from user_info;
-
-
