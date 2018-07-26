@@ -123,7 +123,7 @@ public class Test {
 			}
 			int idx = index(arr,str);
 			if(idx == -1) {
-				System.out.println("찾는값이없습니다.");
+				System.out.println("찾는값이없습니다."); 
 			} else {
 				System.out.println(idx+" 번째 방에 있습니다.");
 			}
