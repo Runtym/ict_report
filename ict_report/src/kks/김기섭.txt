@@ -1,19 +1,178 @@
- - 자바의 특성과 장점을 찾아서 서술해 주세요 -
- 1. 많은 사용자와 레퍼런스
-  - 비교적 배우기 쉬운 언어의 장점이 있기 때문에 여러 사람들이 JAVA를 사용할 수 있었고(대중성),
-  	이로 인해 많은 연구를 통해 안정성을 확보하면서 JAVA를 이용하는 대형 프로젝트가 진행되었고, 많은 참고자료와 오픈소스 API들이 생겨났다
-  	
- 2. JVM에 의한 높은 운영체제 호환성 (Write Once, Run Anywhere)
-  - JAVA로 만들어진 프로그램은 어떤 운영체제에서든 JVM을 통해서 똑같이 작동한다.
-  	이는 운영체제 마다 다른 코드를 작성할 필요가 없게 만들기 때문에 생산성면에서 커다란 이점이 있다고 할 수 있다.
-  	다만 운영체제마다 미묘한 차이가 있으므로, 특정 운영체제를 대상으로 개발되어 다른 운영체제를 고려하지 않은 프로그램을
-  	필요에 타 운영체제에서 실행해야 할 때에는 별도의 테스트가 필요하다.(하지만 JAVA는 다른 언어에 비해 이런 부분들이 적은 편이다.)
-  	
- 3. 자동 메모리 관리 (가비지 컬렉터)
-  - 사용하지 않는 변수, 메서드등을 메모리에서 자동으로 제거해주는 기능인 '가비지 컬렉터'의 존재로 인해
-  	JAVA 개발자는 메모리 관리에 크게 신경쓰지 않아도 되기 때문에 생산성의 향상에 큰 도움을 준다.
-  	
- 4. 강고함
-  - JAVA는 안정성 유지를 위해 약간의 자유도를 희생하여 다른 언어에서 지원하는 많은 기능을 제한하고 있다.
-  	예를들면, 객체간의 다중 상속의 배제(클래스 재사용을 통한 생산성의 향상과 관리 상의 이점이 있지만 복잡하게 꼬인 프로그램이 될 위험성을 갖고 있다)
-  	메모리 직접접근 함수 미지원, 예약어의 오버라이딩 불가, 최대한 많은 오류를 배제하는 컴파일러 등..
+1. 문자열 2개를 입력받아 정수로 변환하여 두수의 합을 출력하는 프로그램을 작성해주세요.
+public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);
+	int strToInt1 = Integer.parseInt(scan.nextLine());
+	int strToInt2 = Integer.parseInt(scan.nextLine());
+	
+	System.out.println(strToInt1 + strToInt2);
+}
+
+
+2. 다음 빈칸에 들어갈 코드를 적으세요.
+>>답 : 1. num<100  ,  2. num>100
+
+public class Test {
+
+	public static void main(String[] args) {
+		int num = 63;
+		
+		if(   1. ?     ) {
+			System.out.println("num이 100 미만입니다.");
+		} else if(    2. ?     ){
+			System.out.println("num이 100 초과입니다. ");
+		} else {
+			System.out.println("num이 100입니다.");
+		}
+		
+	}
+}
+
+
+3. 정수형 배열을 만들고 5개의 랜덤값(0~ 9)을 집어넣어 출력하는 프로그램을 작성해주세요. 
+  - (List 사용가능)
+  import java.util.ArrayList;
+
+public class Test {
+	public static void main(String[] args) {
+		ArrayList<Integer> ls = new ArrayList<Integer>();
+		for(int i = 0; i<5; i++) {
+			int num = (int)(Math.random()*10);
+			ls.add(num);
+		}
+		System.out.println(ls);
+	}
+
+}
+  
+
+4. 정수형 데이터타입 2개를 파라미터로 받아 합을 리턴하는 메소드를 작성해주세요.
+public class Test {
+
+	public static int cal(int num1, int num2) {
+		return num1 + num2;
+	}
+	public static void main(String[] args) {
+		System.out.println(cal(5, 6));
+
+	}
+}
+
+
+5. 1부터 50까지 중에서 3의 배수이고 7의배수인 숫자를 출력해주세요. 
+public class Test {
+	public static void main(String[] args) {
+		for (int i = 1; i <= 50; i++) {
+			if(i%3==0 && i%7==0) {
+				System.out.println(i);
+			}
+		}
+	}
+}
+
+6. 파라미터로 임의의 값이 들어있는 정수형 배열을 받아 최대값을 리턴해주는 메소드를 작성해주세요. 
+  - (사이즈 3 ~ 10)      
+  - (List 사용가능)
+  public class Test {
+
+	public static int getMax(ArrayList<Integer> list) {
+		int max = 0;
+		for (int i = 0; i < list.size(); i++) {
+			if (i == 0) {
+				max = list.get(i);
+			}
+			if (max < list.get(i)) {
+				max = list.get(i);
+			}
+		}
+
+		return max;
+	}
+
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(1);
+		list.add(6);
+		list.add(5);
+		System.out.println(getMax(list));
+	}
+}
+  
+
+7. 파라미터로 String 배열 과 문자열을 받아 해당 배열에 몇번째 방에 해당 문자열이 있는지 리턴하는 메소드를 작성해주세요.
+  - (List 사용가능)
+ import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Test {
+
+	public static int getEqual(String[] strArr, String str) {
+		for (int i = 0; i < strArr.length; i++) {
+			if(strArr[i].equals(str)) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("배열 생성");
+		String arrData = scan.nextLine();
+		String[] strArr = arrData.split(",");
+		
+		System.out.println("찾아낼 문자열");
+		String str = scan.nextLine();
+		
+		int index = getEqual(strArr,str);
+		if(index==-1) {
+		System.out.println("그런건 없어");
+		} else {
+			System.out.println(index + "번째 인덱스에 존재");
+		}
+	}
+}
+  
+
+8. 다음 프로그램에 실행 결과를 쓰세요.
+
+	답 : 내가 달립니다.
+		아빠가 달립니다.
+	
+class Father{
+	
+	public void run() {
+		System.out.println("아빠가 달립니다.");
+	}
+}
+
+public class Test extends Father{
+
+	@Override
+	public void run() {
+		System.out.println("내가 달립니다.");
+	}
+
+	public static void main(String[] args) {
+		Father f = new Test();
+		f.run();
+ 
+		Father f2 = new Father();
+		f2.run();
+	}
+
+} 
+
+
+9. user_info 라는 이름, 나이, 주소를 저장할 수 있는 table을 만드는 명령어를 쓰세요 
+  - (이름, 나이는 null값이 안되게 설정)
+  - (데이터 타입, 사이즈는 적당히)
+  - (oracle, mariadb 둘중에 아무거나)
+ create table user_info(
+ name varchar(100) not null,
+ age int not null,
+ address varchar(20)
+ );
+  
+
+10. 방금만든 user_info 테이블의 내용을 모두 보고 싶을때에 사용하는 명령어를 쓰세요.
+select * from user_info
