@@ -37,7 +37,7 @@ public class Test {
 		int[] numArr = new int[size];
 		
 		for(int i=0; i<size; i++) {
-			numArr[i] = (int)(Math.random()*9);
+			numArr[i] = (int)(Math.random()*10);
 			System.out.println(numArr[i]);
 		}
 	}
