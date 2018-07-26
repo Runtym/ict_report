@@ -1,4 +1,4 @@
-1. ¹®ÀÚ¿­ 2°³¸¦ ÀÔ·Â¹Ş¾Æ Á¤¼ö·Î º¯È¯ÇÏ¿© µÎ¼öÀÇ ÇÕÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇØÁÖ¼¼¿ä.
+1. ë¬¸ìì—´ 2ê°œë¥¼ ì…ë ¥ë°›ì•„ ì •ìˆ˜ë¡œ ë³€í™˜í•˜ì—¬ ë‘ìˆ˜ì˜ í•©ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•´ì£¼ì„¸ìš”.
 package test27;
 
 import java.util.Scanner;
@@ -8,7 +8,7 @@ public class testest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String str;
-		System.out.println("¼ıÀÚ µÎ°³¸¦,À¸·Î ³ª´²¼­ ÀÔ·ÂÇØ ÁÖ¼¼¿ä");
+		System.out.println("ìˆ«ì ë‘ê°œë¥¼,ìœ¼ë¡œ ë‚˜ëˆ ì„œ ì…ë ¥í•´ ì£¼ì„¸ìš”");
 		str=sc.nextLine();
 		String[] strArr = str.split(",");
 		int sum=0;
@@ -22,7 +22,7 @@ public class testest {
 }
 
 
-2. ´ÙÀ½ ºóÄ­¿¡ µé¾î°¥ ÄÚµå¸¦ ÀûÀ¸¼¼¿ä.
+2. ë‹¤ìŒ ë¹ˆì¹¸ì— ë“¤ì–´ê°ˆ ì½”ë“œë¥¼ ì ìœ¼ì„¸ìš”.
 
 public class Test {
 
@@ -30,18 +30,18 @@ public class Test {
 		int num = 63;
 		
 		if(num<100) {
-			System.out.println("numÀÌ 100 ¹Ì¸¸ÀÔ´Ï´Ù.");
+			System.out.println("numì´ 100 ë¯¸ë§Œì…ë‹ˆë‹¤.");
 		} else if(num>100){
-			System.out.println("numÀÌ 100 ÃÊ°úÀÔ´Ï´Ù. ");
+			System.out.println("numì´ 100 ì´ˆê³¼ì…ë‹ˆë‹¤. ");
 		} else {
-			System.out.println("numÀÌ 100ÀÔ´Ï´Ù.");
+			System.out.println("numì´ 100ì…ë‹ˆë‹¤.");
 		}
 		
 	}
 }
 
-3. Á¤¼öÇü ¹è¿­À» ¸¸µé°í 5°³ÀÇ ·£´ı°ª(0~ 9)À» Áı¾î³Ö¾î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇØÁÖ¼¼¿ä. 
-  - (List »ç¿ë°¡´É)
+3. ì •ìˆ˜í˜• ë°°ì—´ì„ ë§Œë“¤ê³  5ê°œì˜ ëœë¤ê°’(0~ 9)ì„ ì§‘ì–´ë„£ì–´ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•´ì£¼ì„¸ìš”. 
+  - (List ì‚¬ìš©ê°€ëŠ¥)
 package test27;
 
 import java.util.ArrayList;
@@ -60,7 +60,7 @@ public class testest {
 }
 
 
-4. Á¤¼öÇü µ¥ÀÌÅÍÅ¸ÀÔ 2°³¸¦ ÆÄ¶ó¹ÌÅÍ·Î ¹Ş¾Æ ÇÕÀ» ¸®ÅÏÇÏ´Â ¸Ş¼Òµå¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä.
+4. ì •ìˆ˜í˜• ë°ì´í„°íƒ€ì… 2ê°œë¥¼ íŒŒë¼ë¯¸í„°ë¡œ ë°›ì•„ í•©ì„ ë¦¬í„´í•˜ëŠ” ë©”ì†Œë“œë¥¼ ì‘ì„±í•´ì£¼ì„¸ìš”.
 package test27;
 
 import java.util.Scanner;
@@ -73,7 +73,7 @@ public class testest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String str;
-		System.out.println("¼ıÀÚ µÎ°³¸¦,À¸·Î ³ª´²¼­ ÀÔ·ÂÇØ ÁÖ¼¼¿ä");
+		System.out.println("ìˆ«ì ë‘ê°œë¥¼,ìœ¼ë¡œ ë‚˜ëˆ ì„œ ì…ë ¥í•´ ì£¼ì„¸ìš”");
 		str=sc.nextLine();
 		String[] strArr = str.split(",");
 
@@ -84,7 +84,7 @@ public class testest {
 
 }
 
-5. 1ºÎÅÍ 50±îÁö Áß¿¡¼­ 3ÀÇ ¹è¼öÀÌ°í 7ÀÇ¹è¼öÀÎ ¼ıÀÚ¸¦ Ãâ·ÂÇØÁÖ¼¼¿ä. 
+5. 1ë¶€í„° 50ê¹Œì§€ ì¤‘ì—ì„œ 3ì˜ ë°°ìˆ˜ì´ê³  7ì˜ë°°ìˆ˜ì¸ ìˆ«ìë¥¼ ì¶œë ¥í•´ì£¼ì„¸ìš”. 
 package test27;
 
 import java.util.Scanner;
@@ -96,19 +96,19 @@ public class testest {
 		
 		for(int i=1;i<=50;i++) {
 			if(i%3==0) {
-				System.out.println("3ÀÇ ¹è¼ö : "+i);
+				System.out.println("3ì˜ ë°°ìˆ˜ : "+i);
 			}
 			if(i%7==0) {
-				System.out.println("7ÀÇ ¹è¼ö : "+i);
+				System.out.println("7ì˜ ë°°ìˆ˜ : "+i);
 			}
 		}
 	}
 
 }
 
-6. ÆÄ¶ó¹ÌÅÍ·Î ÀÓÀÇÀÇ °ªÀÌ µé¾îÀÖ´Â Á¤¼öÇü ¹è¿­À» ¹Ş¾Æ ÃÖ´ë°ªÀ» ¸®ÅÏÇØÁÖ´Â ¸Ş¼Òµå¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä. 
-  - (»çÀÌÁî 3 ~ 10)      
-  - (List »ç¿ë°¡´É)
+6. íŒŒë¼ë¯¸í„°ë¡œ ì„ì˜ì˜ ê°’ì´ ë“¤ì–´ìˆëŠ” ì •ìˆ˜í˜• ë°°ì—´ì„ ë°›ì•„ ìµœëŒ€ê°’ì„ ë¦¬í„´í•´ì£¼ëŠ” ë©”ì†Œë“œë¥¼ ì‘ì„±í•´ì£¼ì„¸ìš”. 
+  - (ì‚¬ì´ì¦ˆ 3 ~ 10)      
+  - (List ì‚¬ìš©ê°€ëŠ¥)
 package test27;
 
 import java.util.ArrayList;
@@ -141,8 +141,8 @@ public class testest {
 	}
 
 }
-7. ÆÄ¶ó¹ÌÅÍ·Î String ¹è¿­ °ú ¹®ÀÚ¿­À» ¹Ş¾Æ ÇØ´ç ¹è¿­¿¡ ¸î¹øÂ° ¹æ¿¡ ÇØ´ç ¹®ÀÚ¿­ÀÌ ÀÖ´ÂÁö ¸®ÅÏÇÏ´Â ¸Ş¼Òµå¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä.
-  - (List »ç¿ë°¡´É)
+7. íŒŒë¼ë¯¸í„°ë¡œ String ë°°ì—´ ê³¼ ë¬¸ìì—´ì„ ë°›ì•„ í•´ë‹¹ ë°°ì—´ì— ëª‡ë²ˆì§¸ ë°©ì— í•´ë‹¹ ë¬¸ìì—´ì´ ìˆëŠ”ì§€ ë¦¬í„´í•˜ëŠ” ë©”ì†Œë“œë¥¼ ì‘ì„±í•´ì£¼ì„¸ìš”.
+  - (List ì‚¬ìš©ê°€ëŠ¥)
 package test27;
 
 import java.util.ArrayList;
@@ -163,22 +163,22 @@ public class testest {
 	
 	public static void main(String[] args) {
 	
-		String[] stAr = {"¹è","º¹¼ş¾Æ","»ç°ú","Ã¼¸®","¸Á°í","¸á·Ğ","Âü¿Ü"};
-		String answer ="Ã¼¸®";
+		String[] stAr = {"ë°°","ë³µìˆ­ì•„","ì‚¬ê³¼","ì²´ë¦¬","ë§ê³ ","ë©œë¡ ","ì°¸ì™¸"};
+		String answer ="ì²´ë¦¬";
 		
 		int idx =indexOf(stAr,answer);
-		System.out.println(idx+"¹øÂ° ¹æ¿¡ "+answer+"ÀÌ(°¡) ÀÖ½À´Ï´Ù.");
+		System.out.println(idx+"ë²ˆì§¸ ë°©ì— "+answer+"ì´(ê°€) ìˆìŠµë‹ˆë‹¤.");
 		
 	}
 
 }
 
-8. ´ÙÀ½ ÇÁ·Î±×·¥¿¡ ½ÇÇà °á°ú¸¦ ¾²¼¼¿ä.
+8. ë‹¤ìŒ í”„ë¡œê·¸ë¨ì— ì‹¤í–‰ ê²°ê³¼ë¥¼ ì“°ì„¸ìš”.
 
 class Father{
 	
 	public void run() {
-		System.out.println("¾Æºü°¡ ´Ş¸³´Ï´Ù.");
+		System.out.println("ì•„ë¹ ê°€ ë‹¬ë¦½ë‹ˆë‹¤.");
 	}
 }
 
@@ -186,7 +186,7 @@ public class Test extends Father{
 
 	@Override
 	public void run() {
-		System.out.println("³»°¡ ´Ş¸³´Ï´Ù.");
+		System.out.println("ë‚´ê°€ ë‹¬ë¦½ë‹ˆë‹¤.");
 	}
 
 	public static void main(String[] args) {
@@ -199,13 +199,13 @@ public class Test extends Father{
 
 }
 
--³»°¡ ´Ş¸³´Ï´Ù.
--¾Æºü°¡ ´Ş¸³´Ï´Ù.
+-ë‚´ê°€ ë‹¬ë¦½ë‹ˆë‹¤.
+-ì•„ë¹ ê°€ ë‹¬ë¦½ë‹ˆë‹¤.
 
-9. user_info ¶ó´Â ÀÌ¸§, ³ªÀÌ, ÁÖ¼Ò¸¦ ÀúÀåÇÒ ¼ö ÀÖ´Â tableÀ» ¸¸µå´Â ¸í·É¾î¸¦ ¾²¼¼¿ä 
-  - (ÀÌ¸§, ³ªÀÌ´Â null°ªÀÌ ¾ÈµÇ°Ô ¼³Á¤)
-  - (µ¥ÀÌÅÍ Å¸ÀÔ, »çÀÌÁî´Â Àû´çÈ÷)
-  - (oracle, mariadb µÑÁß¿¡ ¾Æ¹«°Å³ª)
+9. user_info ë¼ëŠ” ì´ë¦„, ë‚˜ì´, ì£¼ì†Œë¥¼ ì €ì¥í•  ìˆ˜ ìˆëŠ” tableì„ ë§Œë“œëŠ” ëª…ë ¹ì–´ë¥¼ ì“°ì„¸ìš” 
+  - (ì´ë¦„, ë‚˜ì´ëŠ” nullê°’ì´ ì•ˆë˜ê²Œ ì„¤ì •)
+  - (ë°ì´í„° íƒ€ì…, ì‚¬ì´ì¦ˆëŠ” ì ë‹¹íˆ)
+  - (oracle, mariadb ë‘˜ì¤‘ì— ì•„ë¬´ê±°ë‚˜)
 
 create table user_info(
 name varchar(200) not null,
@@ -213,6 +213,6 @@ age int not null,
 address varchar(200)
 );
 
-10. ¹æ±İ¸¸µç user_info Å×ÀÌºíÀÇ ³»¿ëÀ» ¸ğµÎ º¸°í ½ÍÀ»¶§¿¡ »ç¿ëÇÏ´Â ¸í·É¾î¸¦ ¾²¼¼¿ä.
+10. ë°©ê¸ˆë§Œë“  user_info í…Œì´ë¸”ì˜ ë‚´ìš©ì„ ëª¨ë‘ ë³´ê³  ì‹¶ì„ë•Œì— ì‚¬ìš©í•˜ëŠ” ëª…ë ¹ì–´ë¥¼ ì“°ì„¸ìš”.
 
 select*from user_info;
