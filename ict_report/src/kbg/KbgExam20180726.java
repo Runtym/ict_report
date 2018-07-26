@@ -85,7 +85,7 @@ public class KbgExam20180726 {
 //		return max;
 //	}
 //
-//	7. 파라미터로 String 배열 과 문자열을 받아 해당 배열에 몇번째 방에 해당 문자열이 있는지 리턴하는 메소드를 작성해주세요.
+//	7. 파라미터로 String 배열 과 문자열을 받아 해당 배열에 몇번째 방에 해당 문자열이 있는지 리턴하는 메소드를 작성해주세요..
 //	  - (List 사용가능)
 //	public int test(String[] a,String b) {
 //		for(int i = 0;i<a.length;i++) {
