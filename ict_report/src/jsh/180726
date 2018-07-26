@@ -31,7 +31,7 @@ public class Test {
 			System.out.println("num이 100 초과입니다. ");
 		} else {
 			System.out.println("num이 100입니다.");
-		}
+		} 
 		
 	}
 }
