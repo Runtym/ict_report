@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+th {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<table border="1">
+		<thead>
+			<tr>
+				<th colspan="2">회원가입</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th><label for='id'>아이디</th>
+				<td><input type='text' id='id'></td>
+			</tr>
+			<tr>
+				<th><label for='pw'>비밀번호</th>
+				<td><input type='password' id='pw'></td>
+			</tr>
+			<tr>
+				<th><label for='pwch'>비밀번호 체크</th>
+				<td><input type='password' id='pwch'></td>
+			</tr>
+			<tr>
+				<th><label for='name'>이름</th>
+				<td><input type='text' id='name'></td>
+			</tr>
+			<tr>
+				<th><label for='age'>나이</th>
+				<td><input type="text" id='age'></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2">
+					<button type="button" onclick="joinCh()">회원가입</button>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<script type="text/javascript">
+		function joinCh() {
+			var idObj = document.querySelector('#id');
+			var pwObj = document.querySelector('#pw');
+			var pwchObj = document.querySelector('#pwch');
+			var nameObj = document.querySelector('#name');
+			var ageObj = document.querySelector('#age');
+
+			if (idObj.value.trim().length < 5) {
+				alert("id는 5글자 이상입니다.");
+				idObj.value = "";
+				idObj.focus();
+				return false;
+			}
+			if (idObj.value.trim().length === 0) {
+				alert("id를 5글자 이상으로 만들어 주세요.");
+				idObj.focus();
+				return false;
+			}
+			if (pwObj.value.trim().length < 6) {
+				alert("비밀번호는 6글자 이상입니다.");
+				pwObj.value = "";
+				pwObj.focus();
+				return false;
+			}
+			if (pwObj.value.trim().length === 0) {
+				alert("비밀번호를 6글자 이상으로 지어 주세요.");
+				pwObj.focus();
+				return false;
+			}
+			if (pwObj.value != pwchObj.value
+					|| pwchObj.value.trim().length === 0) {
+				alert("비밀번호를 다시한번 확인해 주세요");
+				pwchObj.value = "";
+				pwchObj.focus();
+				return false;
+			}
+			if (nameObj.value.trim().length == 0) {
+				alert("이름을 입력해주세요");
+				nameObj.focus();
+				return false;
+			}
+			var ageCh = parseInt(ageObj.value);
+			if (ageCh >= 130) {
+				alert("진짜" + ageCh + "살이라구??");
+				ageObj.value = "";
+				ageObj.focus();
+				return false;
+			}
+			if (ageObj.value.trim().length == 0) {
+				alert("나이를 입력해주세요");
+				ageObj.focus();
+				return false;
+			}
+			return true;
+		}
+	</script>
+</body>
+</html>
