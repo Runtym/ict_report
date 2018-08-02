@@ -27,6 +27,7 @@ public class Homework_2018_07_16_Test {
 		int i = 10;
 		long l=1821;
 		
+		System.out.println(l);
 		System.out.println(ig.longValue());
 		System.out.println(lg.intValue());
 		
