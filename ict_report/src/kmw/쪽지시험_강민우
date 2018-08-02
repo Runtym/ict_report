@@ -61,9 +61,7 @@ public class Exam_07_26 {
 	}
 }
 
-
 5. 1부터 50까지 중에서 3의 배수이고 7의배수인 숫자를 출력해주세요. 
-
 public class Exam_07_26 {
 	public static void main(String[] args) {
 		for(int i=1; i<=50 ; i++) {
