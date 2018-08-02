@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<style>
+body{
+	margin-left: 200px;
+	background-image: url('/ict/img/col.png');
+	background-repeat: no-repeat; /* 이미지반복X */
+	background-attachment: fixed;  /* 이미지 고정 */
+	background-color:green;
+}
+
+div.park{
+	background-color:yellow;
+	border: 6px dotted red;  /* 컨테이너 경계 붉은 점 (두께,스타일,색상) */
+	width: auto;			/* 가로 자동 */	
+	height: auto;			/* 높이 자동 */
+	 margin-top:15px;		/* 위쪽 여유공간 확보 */
+	margin-left:500px; 		/* 왼쪽 여유공간 확보 */
+}
+
+
+</style>
+
+<body>
+<div class="park">
+<h1>CSS 로마의 독재관</h1>
+<p>로마의 유명하면서도 대표적인 독재관은 
+루키우스 코르넬리우스 술라와 훗날 시저로 
+유명한 가이우스 율리우스 카이사르이다.
+둘다 로마로 군대를 진군 시켜서 루비콘 강을 건넜고 독재관이 되었지만
+이 둘의 정책은 극과 극이였는데 술라는 공포정치를 하였고 카이사르는	
+자신의 적들을 사면해주는 관용정치를 하였다. 하지만 결과는 아이러니
+하게도 관용을 배풀었던 카이사르는 3월15일 '해방자' 라는 무리에
+암살당했고 술라는 독재관 2년때에 스스로 물러났고 1년후 집에서 세상을
+떠났다.
+</p>
+
+</div>
+</body>
+</html>
