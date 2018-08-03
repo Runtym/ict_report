@@ -79,7 +79,7 @@ for(int i= 0;i<al[t].length;i++){
 import java.util.Scanner;	
  public string a(){
 ArrayList k[] = new ArrayList[];
-k[] =["dsad","dasdsada","dasdsa2"]
+k[] =["dsad","dasdsada","dasdsa2"];
 Scanner scan = new Scanner(System.in);
 System.out.println("해당문자열을 입력하세요");
 String t =k.indexof(scan.nextLine);
