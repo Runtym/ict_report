@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-
 import phw.phw20180720.test26.DBCon;
 import phw.phw20180720.test26.UserDAO;
 
@@ -21,7 +20,6 @@ public class UserDAOImpl implements phw.phw20180720.test26.UserDAO {
 		this.con = DBCon.getCon();
 
 		ArrayList<HashMap<String, String>> userList = new ArrayList<HashMap<String, String>>();
-	
 
 		String sql = "select * from user_info";
 
@@ -132,8 +130,8 @@ public class UserDAOImpl implements phw.phw20180720.test26.UserDAO {
 					ps.setString(3, user.get("uiCretim"));
 					ps.setString(4, user.get("uiEtc"));
 					ps.setString(5, user.get("uiName"));
-					}
-			} 
+				}
+			}
 			result = ps.executeUpdate();
 			this.con.commit();
 		} catch (SQLException e) {
