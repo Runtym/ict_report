@@ -1,108 +1,71 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<style type="text/css">
-th {
-	text-align: center;
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="/views/common/common.jsp"%>
+<style>
+.login-form {
+	width: 300px;
+	margin: 0 auto;
 }
 </style>
-</head>
 <body>
-	<table border="1">
-		<thead>
-			<tr>
-				<th colspan="2">회원가입</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th><label for='id'>아이디</th>
-				<td><input type='text' id='id'></td>
-			</tr>
-			<tr>
-				<th><label for='pw'>비밀번호</th>
-				<td><input type='password' id='pw'></td>
-			</tr>
-			<tr>
-				<th><label for='pwch'>비밀번호 체크</th>
-				<td><input type='password' id='pwch'></td>
-			</tr>
-			<tr>
-				<th><label for='name'>이름</th>
-				<td><input type='text' id='name'></td>
-			</tr>
-			<tr>
-				<th><label for='age'>나이</th>
-				<td><input type="text" id='age'></td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td colspan="2">
-					<button type="button" onclick="joinCh()">회원가입</button>
-				</td>
-			</tr>
-		</tfoot>
-	</table>
+	<div class="container">
+		<div class="row centered-form">
+			<div
+				class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Please sign up</h3>
+					</div>
+					<div class="panel-body">
+						<form role="form" action="<%=rPath%>views/user/signup_ok.jsp"
+							method="post">
+							<div class="form-group">
+								<input type="text" name="id" id="id"
+									class="form-control input-sm" placeholder="ID">
+							</div>
+							<div class="row">
+								<div class="col-xs-6 col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="password" name="pwd" id="pwd"
+											class="form-control input-sm" placeholder="Password">
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="password" name="pwdch" id="pwdch"
+											class="form-control input-sm" placeholder="Confirm Password">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="email" name="email" id="email"
+									class="form-control input-sm" placeholder="Email Address">
+							</div>
+							<div class="form-group">
+								<input type="text" name="name" id="name"
+									class="form-control input-sm" placeholder="Name">
+							</div>
+							<div class="form-group">
+								<label for="lvl">�ɹ� ����</label> <select class="form-control"
+									id="lvl" name="lvl">
+									<option value='0'>�⺻</option>
+									<option value='1'>�Խ��ǰ�����</option>
+									<option value='2'>�߰�������</option>
+									<option value='3'>������</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" rows="5" id="etc" name="etc"></textarea>
+							</div>
 
-	<script type="text/javascript">
-		function joinCh() {
-			var idObj = document.querySelector('#id');
-			var pwObj = document.querySelector('#pw');
-			var pwchObj = document.querySelector('#pwch');
-			var nameObj = document.querySelector('#name');
-			var ageObj = document.querySelector('#age');
+							<input type="submit" value="Register"
+								class="btn btn-info btn-block">
 
-			if (idObj.value.trim().length < 5) {
-				alert("id는 5글자 이상입니다.");
-				idObj.value = "";
-				idObj.focus();
-				return false;
-			}
-			if (idObj.value.trim().length === 0) {
-				alert("id를 5글자 이상으로 만들어 주세요.");
-				idObj.focus();
-				return false;
-			}
-			if (pwObj.value.trim().length < 6) {
-				alert("비밀번호는 6글자 이상입니다.");
-				pwObj.value = "";
-				pwObj.focus();
-				return false;
-			}
-			if (pwObj.value.trim().length === 0) {
-				alert("비밀번호를 6글자 이상으로 지어 주세요.");
-				pwObj.focus();
-				return false;
-			}
-			if (pwObj.value != pwchObj.value
-					|| pwchObj.value.trim().length === 0) {
-				alert("비밀번호를 다시한번 확인해 주세요");
-				pwchObj.value = "";
-				pwchObj.focus();
-				return false;
-			}
-			if (nameObj.value.trim().length == 0) {
-				alert("이름을 입력해주세요");
-				nameObj.focus();
-				return false;
-			}
-			var ageCh = parseInt(ageObj.value);
-			if (ageCh >= 130) {
-				alert("진짜" + ageCh + "살이라구??");
-				ageObj.value = "";
-				ageObj.focus();
-				return false;
-			}
-			if (ageObj.value.trim().length == 0) {
-				alert("나이를 입력해주세요");
-				ageObj.focus();
-				return false;
-			}
-			return true;
-		}
-	</script>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
