@@ -29,7 +29,6 @@ public class HomeWork0809 {
 				cnt++;
 			}
 		}
-		String f = a.replace(b,"");
 		String[] c = new String[cnt+1];
 		for(int i =0;i<c.length;i++) {
 			int idx = a.indexOf(b);
