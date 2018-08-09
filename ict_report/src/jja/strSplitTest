@@ -2,15 +2,20 @@ package test;
 
 public class ListTest {
 
-	public static String[] strSplit(String str, String point) {
-		String copyStr = "";
-		int cnt = 1;
-		for (int i = 0; i < str.length(); i++) {
-			Character c = str.charAt(i);
-			if (c.toString().equals(point)) {
+	public static int indexOfCnt(String stBea, String searchStr) {
+		int cnt=0;
+		for (int i = 0; i < stBea.length(); i++) {
+			Character c = stBea.charAt(i);
+			if (c.toString().equals(searchStr)) {
 				cnt++;
 			}
 		}
+		return cnt;
+	}
+	
+	public static String[] strSplit(String str, String point) {
+		String copyStr = "";
+		int cnt = indexOfCnt(str,point)+1;
 
 		String[] bea = new String[cnt];
 
@@ -31,7 +36,7 @@ public class ListTest {
 
 	public static void main(String[] args) {
 		String str = "aff-bdd-c-d-e1-f";
-		String[] bea = strSplit(str, "-");
+		String[] bea = strSplit(str, "");
 		for (int i = 0; i < bea.length; i++) {
 			System.out.println(bea[i]);
 		}
