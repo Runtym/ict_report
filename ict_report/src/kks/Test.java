@@ -4,30 +4,39 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Test {
+	public static String str = "";
 
-	public static int getEqual(String[] strArr, String str) {
-		for (int i = 0; i < strArr.length; i++) {
-			if(strArr[i].equals(str)) {
-				return i;
+	public static String[] split(String str2) {
+		int num = 0;
+		String strr = str;
+
+		for (int i = 0; i < strr.length(); i++) {
+			Character c = strr.charAt(i);
+			if (c.toString().equals(str2)) {
+				num++;
 			}
 		}
-		return -1;
+		num++;
+		String[] strArr = new String[num];
+
+		for (int i = 0; i < num; i++) {
+			int idx = strr.indexOf(",");
+			if (idx == -1) {
+				strArr[i] = strr;
+				break;
+			}
+			strArr[i] = strr.substring(0, idx);
+			strr = strr.substring(idx + 1);
+		}
+
+		return strArr;
 	}
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		System.out.println("배열 생성");
-		String arrData = scan.nextLine();
-		String[] strArr = arrData.split(",");
-		
-		System.out.println("찾아낼 문자열");
-		String str = scan.nextLine();
-		
-		int index = getEqual(strArr,str);
-		if(index==-1) {
-		System.out.println("그런건 없어");
-		} else {
-			System.out.println(index + "번째에 존재");
+		str = "A,B,C,D";
+		String[] arr = Test.split(",");
+		for (String s : arr) {
+			System.out.println(s);
 		}
 	}
 }
