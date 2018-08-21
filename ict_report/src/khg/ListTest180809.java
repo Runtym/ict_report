@@ -1,6 +1,6 @@
-package com.ict.erp.test;
+package khg;
 
-public class ListTest {
+public class ListTest180809 {
 
 	static int cnt = 0; // 카운트를 0으로 초기화
 
